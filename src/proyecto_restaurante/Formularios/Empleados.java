@@ -79,30 +79,30 @@ public class Empleados extends javax.swing.JFrame {
 
         btnSalir.setFont(new java.awt.Font("Segoe UI Black", 1, 20)); // NOI18N
         btnSalir.setText("REGRESAR");
-        btnSalir.setBorder(javax.swing.BorderFactory.createEtchedBorder(java.awt.Color.black, null));
+        btnSalir.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         btnSalir.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnSalirActionPerformed(evt);
             }
         });
-        getContentPane().add(btnSalir, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 490, 160, 50));
+        getContentPane().add(btnSalir, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 510, 170, 40));
 
         btnAgregar.setFont(new java.awt.Font("Segoe UI Black", 1, 20)); // NOI18N
         btnAgregar.setText("AGREGAR");
-        btnAgregar.setBorder(javax.swing.BorderFactory.createEtchedBorder(java.awt.Color.black, null));
+        btnAgregar.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         btnAgregar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnAgregarActionPerformed(evt);
             }
         });
-        getContentPane().add(btnAgregar, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 490, 160, 50));
+        getContentPane().add(btnAgregar, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 510, 170, 40));
 
         txtAreaReferencias.setBackground(new java.awt.Color(227, 227, 227));
         txtAreaReferencias.setColumns(20);
         txtAreaReferencias.setRows(5);
         jScrollPane1.setViewportView(txtAreaReferencias);
 
-        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 310, 250, 140));
+        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(840, 370, 230, 100));
 
         txtSueldo.setBackground(new java.awt.Color(227, 227, 227));
         txtSueldo.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -110,7 +110,7 @@ public class Empleados extends javax.swing.JFrame {
                 txtSueldoKeyTyped(evt);
             }
         });
-        getContentPane().add(txtSueldo, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 250, 270, 40));
+        getContentPane().add(txtSueldo, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 310, 260, 40));
 
         txtContraseña.setBackground(new java.awt.Color(227, 227, 227));
         getContentPane().add(txtContraseña, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 370, 240, 40));
@@ -180,7 +180,7 @@ public class Empleados extends javax.swing.JFrame {
         jLabel5.setText("REFERENCIAS");
         jPanel3.add(jLabel5);
 
-        getContentPane().add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 370, 190, 40));
+        getContentPane().add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 410, 190, 40));
 
         jPanel4.setBackground(new java.awt.Color(227, 227, 227));
 
@@ -199,7 +199,7 @@ public class Empleados extends javax.swing.JFrame {
         jLabel7.setText("SUELDO");
         jPanel5.add(jLabel7);
 
-        getContentPane().add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 250, 140, 40));
+        getContentPane().add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 310, 140, 40));
 
         jPanel6.setBackground(new java.awt.Color(227, 227, 227));
 
@@ -235,7 +235,7 @@ public class Empleados extends javax.swing.JFrame {
         jLabel11.setText("RANGO");
         jPanel9.add(jLabel11);
 
-        getContentPane().add(jPanel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 190, 140, 40));
+        getContentPane().add(jPanel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 250, 140, 40));
 
         txtrango.setBackground(new java.awt.Color(227, 227, 227));
         txtrango.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -243,7 +243,7 @@ public class Empleados extends javax.swing.JFrame {
                 txtrangoKeyTyped(evt);
             }
         });
-        getContentPane().add(txtrango, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 190, 270, 40));
+        getContentPane().add(txtrango, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 250, 260, 40));
 
         jPanel10.setBackground(new java.awt.Color(227, 227, 227));
 
@@ -252,7 +252,7 @@ public class Empleados extends javax.swing.JFrame {
         jLabel13.setText("E_MAIL");
         jPanel10.add(jLabel13);
 
-        getContentPane().add(jPanel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 130, 140, 40));
+        getContentPane().add(jPanel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 190, 140, 40));
 
         jPanel11.setBackground(new java.awt.Color(227, 227, 227));
 
@@ -267,10 +267,10 @@ public class Empleados extends javax.swing.JFrame {
         getContentPane().add(txtTelefono, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 490, 240, 40));
 
         txtMail.setBackground(new java.awt.Color(227, 227, 227));
-        getContentPane().add(txtMail, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 130, 270, 40));
+        getContentPane().add(txtMail, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 190, 260, 40));
 
-        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Fondoproye.png"))); // NOI18N
-        getContentPane().add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1100, 580));
+        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/FondoM.png"))); // NOI18N
+        getContentPane().add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1100, 570));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents

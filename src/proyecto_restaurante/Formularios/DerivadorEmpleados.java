@@ -77,7 +77,7 @@ public class DerivadorEmpleados extends javax.swing.JFrame {
                 BotonReservacionesActionPerformed(evt);
             }
         });
-        getContentPane().add(BotonReservaciones, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 160, 310, 100));
+        getContentPane().add(BotonReservaciones, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 180, 310, 100));
 
         BotonPedidos.setFont(new java.awt.Font("Segoe UI Black", 1, 25)); // NOI18N
         BotonPedidos.setText("PEDIDOS");
@@ -87,7 +87,7 @@ public class DerivadorEmpleados extends javax.swing.JFrame {
                 BotonPedidosActionPerformed(evt);
             }
         });
-        getContentPane().add(BotonPedidos, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 160, 310, 100));
+        getContentPane().add(BotonPedidos, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 180, 310, 100));
 
         btnSALIR.setFont(new java.awt.Font("Segoe UI Black", 1, 25)); // NOI18N
         btnSALIR.setText("SALIR DEL SISTEMA");
@@ -102,10 +102,10 @@ public class DerivadorEmpleados extends javax.swing.JFrame {
         jLabel2.setFont(new java.awt.Font("Segoe Script", 3, 45)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(102, 102, 102));
         jLabel2.setText("¡¡¡ BIENVENIDO !!!");
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 50, 450, 60));
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 60, 480, 60));
 
         jLabel1.setFont(new java.awt.Font("Trebuchet MS", 1, 25)); // NOI18N
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Fondoproye.png"))); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/FondoM.png"))); // NOI18N
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1100, 580));
 
         pack();

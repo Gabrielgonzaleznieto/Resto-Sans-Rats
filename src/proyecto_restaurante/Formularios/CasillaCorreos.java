@@ -83,7 +83,7 @@ public class CasillaCorreos extends javax.swing.JFrame {
                 btonENVIARActionPerformed(evt);
             }
         });
-        getContentPane().add(btonENVIAR, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 380, 110, 40));
+        getContentPane().add(btonENVIAR, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 380, 120, 40));
 
         txtdestino.setBackground(new java.awt.Color(227, 227, 227));
         txtdestino.addActionListener(new java.awt.event.ActionListener() {
@@ -117,7 +117,7 @@ public class CasillaCorreos extends javax.swing.JFrame {
                 btnSALIRActionPerformed(evt);
             }
         });
-        getContentPane().add(btnSALIR, new org.netbeans.lib.awtextra.AbsoluteConstraints(880, 390, 120, 40));
+        getContentPane().add(btnSALIR, new org.netbeans.lib.awtextra.AbsoluteConstraints(930, 490, 120, 40));
 
         jLabel4.setFont(new java.awt.Font("Segoe Script", 3, 35)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(102, 102, 102));
@@ -143,7 +143,7 @@ public class CasillaCorreos extends javax.swing.JFrame {
         getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 160, 210, 40));
 
         jLabel1.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Fondoproye.png"))); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/FondoM.png"))); // NOI18N
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1100, 580));
 
         pack();

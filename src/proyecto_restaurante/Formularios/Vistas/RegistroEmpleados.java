@@ -14,6 +14,7 @@ import javax.swing.table.DefaultTableCellRenderer;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.table.TableColumn;
 import proyecto_restaurante.Formularios.Empleados;   //Aca importo el Formulario de Empleados.
+import proyecto_restaurante.Formularios.ModificarEmpleados; //Aca importo el Formulario de Modificar Empleados.
 
 /**
  *
@@ -24,6 +25,7 @@ public class RegistroEmpleados extends javax.swing.JFrame {
     DefaultTableModel modeloTabla;
     boolean opc = true;
     Empleados f = new Empleados();
+    ModificarEmpleados mf = new ModificarEmpleados();
 
     public RegistroEmpleados() {
 
@@ -33,21 +35,21 @@ public class RegistroEmpleados extends javax.swing.JFrame {
         setIconImage(lo.getImage(getClass().getResource("/Imagenes/Portada.jpg")));       //AQUI LE DOY UN ICONO AL PROGRAMA.
 
         tabla();
-        
+
         //ACA SE HACE TRANSPARENTE EL JTABLE.
         jTable1.setBackground(new Color(0, 0, 0, 0));
-       ((DefaultTableCellRenderer) jTable1.getDefaultRenderer(Object.class)).setBackground(new Color(0, 0, 0, 0));
+        ((DefaultTableCellRenderer) jTable1.getDefaultRenderer(Object.class)).setBackground(new Color(0, 0, 0, 0));
         jTable1.setGridColor(Color.DARK_GRAY);
         jTable1.setForeground(Color.DARK_GRAY);
         jScrollPane1.setBackground(new Color(0, 0, 0, 0));
         jScrollPane1.setOpaque(false);
         jTable1.setOpaque(false);
         ((DefaultTableCellRenderer) jTable1.getDefaultRenderer(Object.class)).setOpaque(false);
-       // jScrollPane1.getViewport().setOpaque(false);
+        // jScrollPane1.getViewport().setOpaque(false);
         jTable1.setShowGrid(true);
-        
+
         //ACA CAMBIO LA LETRA Y EL TAMAÑO Y TAMBIEN AGRANDO O ACHICO LAS COLUMNAS DE LA TABLA.
-        jTable1.setFont(new Font("Tahoma",1,13));
+        jTable1.setFont(new Font("Tahoma", 1, 13));
         TableColumn TableColumn = jTable1.getColumnModel().getColumn(0);
         TableColumn.setPreferredWidth(20);
         TableColumn TableColumn1 = jTable1.getColumnModel().getColumn(1);
@@ -56,18 +58,18 @@ public class RegistroEmpleados extends javax.swing.JFrame {
         TableColumn2.setPreferredWidth(50);
         TableColumn TableColumn3 = jTable1.getColumnModel().getColumn(3);
         TableColumn3.setPreferredWidth(50);
-        
+
     }
 
     private void cerrar_ventana() {
 
         String botones[] = {"ACEPTAR", "CANCELAR"};
-        int eleccion = JOptionPane.showOptionDialog(this, "¿DESEA ELIMINAR EL REGISTRO?",null, 0, 0, null, botones, this);
-        if (eleccion == JOptionPane.YES_OPTION) {       
+        int eleccion = JOptionPane.showOptionDialog(this, "¿DESEA ELIMINAR EL REGISTRO?", null, 0, 0, null, botones, this);
+        if (eleccion == JOptionPane.YES_OPTION) {
         } else if (eleccion == JOptionPane.NO_OPTION) {
             System.out.println("Se cancelo el cierre");
         }
-         
+
     }
 
     @SuppressWarnings("unchecked")
@@ -82,6 +84,7 @@ public class RegistroEmpleados extends javax.swing.JFrame {
         jScrollPane1 = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
         jLabel2 = new javax.swing.JLabel();
+        btnMODIFICAR = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
@@ -91,53 +94,53 @@ public class RegistroEmpleados extends javax.swing.JFrame {
 
         btnAgregarEmpleado.setFont(new java.awt.Font("Segoe UI Black", 1, 20)); // NOI18N
         btnAgregarEmpleado.setText("NUEVO");
-        btnAgregarEmpleado.setBorder(javax.swing.BorderFactory.createEtchedBorder(java.awt.Color.black, null));
+        btnAgregarEmpleado.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         btnAgregarEmpleado.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnAgregarEmpleadoActionPerformed(evt);
             }
         });
-        getContentPane().add(btnAgregarEmpleado, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 150, 190, 40));
+        getContentPane().add(btnAgregarEmpleado, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 160, 150, 40));
 
         btnBuscar.setFont(new java.awt.Font("Segoe UI Black", 1, 20)); // NOI18N
         btnBuscar.setText("BUSCAR");
-        btnBuscar.setBorder(javax.swing.BorderFactory.createEtchedBorder(java.awt.Color.black, null));
+        btnBuscar.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         btnBuscar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnBuscarActionPerformed(evt);
             }
         });
-        getContentPane().add(btnBuscar, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 150, 190, 40));
+        getContentPane().add(btnBuscar, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 160, 150, 40));
 
         btnEliminar.setFont(new java.awt.Font("Segoe UI Black", 1, 20)); // NOI18N
         btnEliminar.setText("ELIMINAR ");
-        btnEliminar.setBorder(javax.swing.BorderFactory.createEtchedBorder(java.awt.Color.black, null));
+        btnEliminar.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         btnEliminar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnEliminarActionPerformed(evt);
             }
         });
-        getContentPane().add(btnEliminar, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 150, 190, 40));
+        getContentPane().add(btnEliminar, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 160, 160, 40));
 
         btnActualizar.setFont(new java.awt.Font("Segoe UI Black", 1, 20)); // NOI18N
         btnActualizar.setText("ACTUALIZAR");
-        btnActualizar.setBorder(javax.swing.BorderFactory.createEtchedBorder(java.awt.Color.black, null));
+        btnActualizar.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         btnActualizar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnActualizarActionPerformed(evt);
             }
         });
-        getContentPane().add(btnActualizar, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 150, 190, 40));
+        getContentPane().add(btnActualizar, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 160, 160, 40));
 
         btbSalir.setFont(new java.awt.Font("Segoe UI Black", 1, 20)); // NOI18N
         btbSalir.setText("SALIR");
-        btbSalir.setBorder(javax.swing.BorderFactory.createEtchedBorder(java.awt.Color.black, null));
+        btbSalir.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         btbSalir.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btbSalirActionPerformed(evt);
             }
         });
-        getContentPane().add(btbSalir, new org.netbeans.lib.awtextra.AbsoluteConstraints(880, 150, 190, 40));
+        getContentPane().add(btbSalir, new org.netbeans.lib.awtextra.AbsoluteConstraints(930, 160, 140, 40));
 
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -152,14 +155,24 @@ public class RegistroEmpleados extends javax.swing.JFrame {
         ));
         jScrollPane1.setViewportView(jTable1);
 
-        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 220, 1030, 220));
+        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 220, 1030, 270));
 
         jLabel2.setFont(new java.awt.Font("Segoe Script", 1, 35)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(102, 102, 102));
         jLabel2.setText("REGISTRO DE EMPLEADOS:");
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 60, 570, 40));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Fondoproye.png"))); // NOI18N
+        btnMODIFICAR.setFont(new java.awt.Font("Segoe UI Black", 1, 20)); // NOI18N
+        btnMODIFICAR.setText("MODIFICAR");
+        btnMODIFICAR.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        btnMODIFICAR.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnMODIFICARActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnMODIFICAR, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 159, 160, 40));
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/FondoM.png"))); // NOI18N
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1100, 580));
 
         pack();
@@ -189,7 +202,7 @@ public class RegistroEmpleados extends javax.swing.JFrame {
         int valor = Integer.parseInt(JOptionPane.showInputDialog(this, "Introduce el numero de empleado "));
 
         String mostrar = "SELECT * FROM empleados WHERE id_empleado = " + valor + "";
-        String[] Titulos = {"Id_empleado", "Nombre", "Dni", "Edad", "Referencias", "Sueldo", "Contraseña", "Mesas","telefono","e_mail"};
+        String[] Titulos = {"Id_empleado", "Nombre", "Dni", "Edad", "Referencias", "Sueldo", "Contraseña", "Mesas", "telefono", "e_mail"};
         String[] Datos = new String[10];
         modeloTabla = new DefaultTableModel(null, Titulos);
         try {
@@ -215,9 +228,9 @@ public class RegistroEmpleados extends javax.swing.JFrame {
     }//GEN-LAST:event_btnBuscarActionPerformed
 
     private void btnEliminarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEliminarActionPerformed
-        
-        cerrar_ventana(); 
-        
+
+        cerrar_ventana();
+
         int row = jTable1.getSelectedRow();
         String id = jTable1.getValueAt(row, 0).toString();
         String result = null;
@@ -245,6 +258,18 @@ public class RegistroEmpleados extends javax.swing.JFrame {
     private void btnActualizarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnActualizarActionPerformed
         tabla();
     }//GEN-LAST:event_btnActualizarActionPerformed
+
+    private void btnMODIFICARActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMODIFICARActionPerformed
+          if (opc == true) {
+            mf.setVisible(true);
+            opc = false;
+        } else {
+            mf.dispose();
+            opc = true;
+            mf.setVisible(true);
+        }
+        tabla();   
+    }//GEN-LAST:event_btnMODIFICARActionPerformed
 
     /**
      * @param args the command line arguments
@@ -288,6 +313,7 @@ public class RegistroEmpleados extends javax.swing.JFrame {
     private javax.swing.JButton btnAgregarEmpleado;
     private javax.swing.JButton btnBuscar;
     private javax.swing.JButton btnEliminar;
+    private javax.swing.JButton btnMODIFICAR;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JScrollPane jScrollPane1;
@@ -298,10 +324,10 @@ public class RegistroEmpleados extends javax.swing.JFrame {
 
         DefaultTableModel modelotabla = new DefaultTableModel();
         ResultSet rs = conexion.getTabla("SELECT * FROM empleados");
-        modelotabla.setColumnIdentifiers(new Object[]{"id_empleado", "Nombre", "Dni", "Edad", "Referencias", "Sueldo", "Contraseña", "Mesas","rango","telefono","e_mail"});
+        modelotabla.setColumnIdentifiers(new Object[]{"id_empleado", "Nombre", "Dni", "Edad", "Referencias", "Sueldo", "Contraseña", "Mesas", "rango", "telefono", "e_mail"});
         try {
             while (rs.next()) {
-                modelotabla.addRow(new Object[]{rs.getString("id_empleado"), rs.getString("nombre"), rs.getString("dni"), rs.getString("edad"), rs.getString("referencias"), rs.getString("sueldo"), rs.getString("contraseña"), rs.getString("mesas"),  rs.getString("rango"),  rs.getString("telefono"),  rs.getString("e_mail")});
+                modelotabla.addRow(new Object[]{rs.getString("id_empleado"), rs.getString("nombre"), rs.getString("dni"), rs.getString("edad"), rs.getString("referencias"), rs.getString("sueldo"), rs.getString("contraseña"), rs.getString("mesas"), rs.getString("rango"), rs.getString("telefono"), rs.getString("e_mail")});
             }
             jTable1.setModel(modelotabla);
         } catch (Exception e) {

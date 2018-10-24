@@ -93,53 +93,53 @@ public class RegistroPedidosRealizados extends javax.swing.JFrame {
 
         BtnAgregarProducto.setFont(new java.awt.Font("Segoe UI Black", 1, 20)); // NOI18N
         BtnAgregarProducto.setText("AGREGAR ");
-        BtnAgregarProducto.setBorder(javax.swing.BorderFactory.createEtchedBorder(java.awt.Color.black, null));
+        BtnAgregarProducto.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         BtnAgregarProducto.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 BtnAgregarProductoActionPerformed(evt);
             }
         });
-        getContentPane().add(BtnAgregarProducto, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 110, 150, 40));
+        getContentPane().add(BtnAgregarProducto, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 160, 150, 40));
 
         BtnActualizar.setFont(new java.awt.Font("Segoe UI Black", 1, 20)); // NOI18N
         BtnActualizar.setText("ACTUALIZAR");
-        BtnActualizar.setBorder(javax.swing.BorderFactory.createEtchedBorder(java.awt.Color.black, null));
+        BtnActualizar.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         BtnActualizar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 BtnActualizarActionPerformed(evt);
             }
         });
-        getContentPane().add(BtnActualizar, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 110, 180, 40));
+        getContentPane().add(BtnActualizar, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 160, 160, 40));
 
         BtnELIMINAR.setFont(new java.awt.Font("Segoe UI Black", 1, 20)); // NOI18N
         BtnELIMINAR.setText("ELIMINAR");
-        BtnELIMINAR.setBorder(javax.swing.BorderFactory.createEtchedBorder(java.awt.Color.black, null));
+        BtnELIMINAR.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         BtnELIMINAR.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 BtnELIMINARActionPerformed(evt);
             }
         });
-        getContentPane().add(BtnELIMINAR, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 110, 150, 40));
+        getContentPane().add(BtnELIMINAR, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 160, 150, 40));
 
         BtnBuscar.setFont(new java.awt.Font("Segoe UI Black", 1, 20)); // NOI18N
         BtnBuscar.setText("BUSCAR");
-        BtnBuscar.setBorder(javax.swing.BorderFactory.createEtchedBorder(java.awt.Color.black, null));
+        BtnBuscar.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         BtnBuscar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 BtnBuscarActionPerformed(evt);
             }
         });
-        getContentPane().add(BtnBuscar, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 110, 140, 40));
+        getContentPane().add(BtnBuscar, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 160, 140, 40));
 
         BtnSalir.setFont(new java.awt.Font("Segoe UI Black", 1, 20)); // NOI18N
         BtnSalir.setText("SALIR");
-        BtnSalir.setBorder(javax.swing.BorderFactory.createEtchedBorder(java.awt.Color.black, null));
+        BtnSalir.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         BtnSalir.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 BtnSalirActionPerformed(evt);
             }
         });
-        getContentPane().add(BtnSalir, new org.netbeans.lib.awtextra.AbsoluteConstraints(930, 110, 150, 40));
+        getContentPane().add(BtnSalir, new org.netbeans.lib.awtextra.AbsoluteConstraints(910, 160, 150, 40));
 
         jTable2.setForeground(new java.awt.Color(204, 102, 0));
         jTable2.setModel(new javax.swing.table.DefaultTableModel(
@@ -152,24 +152,24 @@ public class RegistroPedidosRealizados extends javax.swing.JFrame {
         ));
         jScrollPane2.setViewportView(jTable2);
 
-        getContentPane().add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 170, 1030, 360));
+        getContentPane().add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 220, 1010, 310));
 
         jLabel2.setFont(new java.awt.Font("Segoe Script", 1, 35)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(102, 102, 102));
         jLabel2.setText("REGISTRO DE PEDIDOS REALIZADOS: ");
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 40, -1, 40));
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 80, -1, 40));
 
         btnIMPRIMIR.setFont(new java.awt.Font("Segoe UI Black", 1, 20)); // NOI18N
         btnIMPRIMIR.setText("IMPRIMIR");
-        btnIMPRIMIR.setBorder(javax.swing.BorderFactory.createEtchedBorder(java.awt.Color.black, null));
+        btnIMPRIMIR.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         btnIMPRIMIR.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnIMPRIMIRActionPerformed(evt);
             }
         });
-        getContentPane().add(btnIMPRIMIR, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 110, 170, 40));
+        getContentPane().add(btnIMPRIMIR, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 160, 170, 40));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Fondoproye.png"))); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/FondoM.png"))); // NOI18N
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1100, 580));
 
         pack();

@@ -87,19 +87,20 @@ public class ConsultaMesasAcargo extends javax.swing.JFrame {
 
         btnSALIR.setFont(new java.awt.Font("Segoe UI Black", 1, 20)); // NOI18N
         btnSALIR.setText("REGRESAR");
+        btnSALIR.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         btnSALIR.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnSALIRActionPerformed(evt);
             }
         });
-        getContentPane().add(btnSALIR, new org.netbeans.lib.awtextra.AbsoluteConstraints(870, 490, 150, 40));
+        getContentPane().add(btnSALIR, new org.netbeans.lib.awtextra.AbsoluteConstraints(920, 490, 150, 40));
 
         jLabel2.setFont(new java.awt.Font("Segoe Script", 1, 35)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(102, 102, 102));
         jLabel2.setText("ATENCION DE MESAS ASIGNADAS");
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 50, 690, 40));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Fondoproye.png"))); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/FondoM.png"))); // NOI18N
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1100, 580));
 
         pack();

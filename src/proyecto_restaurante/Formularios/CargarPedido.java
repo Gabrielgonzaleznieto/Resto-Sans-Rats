@@ -75,13 +75,13 @@ public class CargarPedido extends javax.swing.JFrame {
 
         BtnAgregar.setFont(new java.awt.Font("Segoe UI Black", 1, 20)); // NOI18N
         BtnAgregar.setText("AGREGAR");
-        BtnAgregar.setBorder(javax.swing.BorderFactory.createEtchedBorder(java.awt.Color.black, null));
+        BtnAgregar.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         BtnAgregar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 BtnAgregarActionPerformed(evt);
             }
         });
-        getContentPane().add(BtnAgregar, new org.netbeans.lib.awtextra.AbsoluteConstraints(870, 370, 190, 50));
+        getContentPane().add(BtnAgregar, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 280, 150, 50));
 
         txtCantidad.setBackground(new java.awt.Color(227, 227, 227));
         txtCantidad.setFont(new java.awt.Font("Tahoma", 0, 22)); // NOI18N
@@ -117,7 +117,7 @@ public class CargarPedido extends javax.swing.JFrame {
 
         BtnTotal.setFont(new java.awt.Font("Trebuchet MS", 1, 16)); // NOI18N
         BtnTotal.setText("TOTAL");
-        BtnTotal.setBorder(javax.swing.BorderFactory.createEtchedBorder(java.awt.Color.black, null));
+        BtnTotal.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         BtnTotal.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 BtnTotalActionPerformed(evt);
@@ -132,13 +132,13 @@ public class CargarPedido extends javax.swing.JFrame {
 
         BtnSalir.setFont(new java.awt.Font("Segoe UI Black", 1, 20)); // NOI18N
         BtnSalir.setText("REGRESAR");
-        BtnSalir.setBorder(javax.swing.BorderFactory.createEtchedBorder(java.awt.Color.black, null));
+        BtnSalir.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         BtnSalir.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 BtnSalirActionPerformed(evt);
             }
         });
-        getContentPane().add(BtnSalir, new org.netbeans.lib.awtextra.AbsoluteConstraints(870, 460, 190, 50));
+        getContentPane().add(BtnSalir, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 470, 150, 50));
 
         txtProducto.setBackground(new java.awt.Color(227, 227, 227));
         txtProducto.setFont(new java.awt.Font("Tahoma", 0, 22)); // NOI18N
@@ -248,7 +248,7 @@ public class CargarPedido extends javax.swing.JFrame {
         });
         getContentPane().add(txtdnimesero, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 470, 150, 40));
 
-        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Fondoproye.png"))); // NOI18N
+        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/FondoM.png"))); // NOI18N
         getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1100, 580));
 
         pack();

@@ -65,12 +65,13 @@ public class Reservaciones extends javax.swing.JFrame {
 
         btnSALIR.setFont(new java.awt.Font("Segoe UI Black", 1, 21)); // NOI18N
         btnSALIR.setText("REGRESAR");
+        btnSALIR.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         btnSALIR.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnSALIRActionPerformed(evt);
             }
         });
-        getContentPane().add(btnSALIR, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 480, 210, 50));
+        getContentPane().add(btnSALIR, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 480, 170, 50));
 
         txtcostoreservacion.setEditable(false);
         txtcostoreservacion.setBackground(new java.awt.Color(227, 227, 227));
@@ -102,6 +103,7 @@ public class Reservaciones extends javax.swing.JFrame {
 
         btnMapaMesas.setFont(new java.awt.Font("Segoe UI Black", 1, 16)); // NOI18N
         btnMapaMesas.setText("VER MESAS");
+        btnMapaMesas.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         btnMapaMesas.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnMapaMesasActionPerformed(evt);
@@ -133,12 +135,13 @@ public class Reservaciones extends javax.swing.JFrame {
 
         btnGUARDAR.setFont(new java.awt.Font("Segoe UI Black", 1, 20)); // NOI18N
         btnGUARDAR.setText("GUARDAR");
+        btnGUARDAR.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         btnGUARDAR.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnGUARDARActionPerformed(evt);
             }
         });
-        getContentPane().add(btnGUARDAR, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 480, 210, 50));
+        getContentPane().add(btnGUARDAR, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 480, 170, 50));
 
         txtmail.setBackground(new java.awt.Color(227, 227, 227));
         txtmail.setFont(new java.awt.Font("Tahoma", 0, 20)); // NOI18N
@@ -213,7 +216,7 @@ public class Reservaciones extends javax.swing.JFrame {
         getContentPane().add(jPanel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 360, 360, 40));
 
         jLabel15.setFont(new java.awt.Font("Segoe UI Black", 1, 20)); // NOI18N
-        jLabel15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Fondoproye.png"))); // NOI18N
+        jLabel15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/FondoM.png"))); // NOI18N
         getContentPane().add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1100, 580));
 
         pack();

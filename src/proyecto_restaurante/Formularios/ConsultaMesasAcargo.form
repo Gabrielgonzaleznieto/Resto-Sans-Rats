@@ -61,13 +61,18 @@
           <Font name="Segoe UI Black" size="20" style="1"/>
         </Property>
         <Property name="text" type="java.lang.String" value="REGRESAR"/>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.BevelBorderInfo">
+            <BevelBorder/>
+          </Border>
+        </Property>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnSALIRActionPerformed"/>
       </Events>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="870" y="490" width="150" height="40"/>
+          <AbsoluteConstraints x="920" y="490" width="150" height="40"/>
         </Constraint>
       </Constraints>
     </Component>
@@ -90,7 +95,7 @@
     <Component class="javax.swing.JLabel" name="jLabel1">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/Imagenes/Fondoproye.png"/>
+          <Image iconType="3" name="/Imagenes/FondoM.png"/>
         </Property>
       </Properties>
       <Constraints>

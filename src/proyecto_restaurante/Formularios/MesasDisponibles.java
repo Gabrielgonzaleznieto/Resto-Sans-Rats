@@ -287,15 +287,15 @@ public class MesasDisponibles extends javax.swing.JFrame {
 
         btnSALIR.setFont(new java.awt.Font("Segoe UI Black", 1, 20)); // NOI18N
         btnSALIR.setText("REGRESAR");
-        btnSALIR.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, null, java.awt.Color.black, null, java.awt.Color.black));
+        btnSALIR.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         btnSALIR.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnSALIRActionPerformed(evt);
             }
         });
-        getContentPane().add(btnSALIR, new org.netbeans.lib.awtextra.AbsoluteConstraints(930, 80, 140, 60));
+        getContentPane().add(btnSALIR, new org.netbeans.lib.awtextra.AbsoluteConstraints(920, 80, 140, 40));
 
-        jLabel19.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Fondito.png"))); // NOI18N
+        jLabel19.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/FondoM.png"))); // NOI18N
         getContentPane().add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1100, 580));
 
         pack();

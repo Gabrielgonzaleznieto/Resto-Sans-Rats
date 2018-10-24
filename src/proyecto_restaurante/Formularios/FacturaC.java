@@ -108,23 +108,23 @@ public class FacturaC extends javax.swing.JFrame {
 
         BtnSELECCIONAR.setFont(new java.awt.Font("Segoe UI Black", 1, 20)); // NOI18N
         BtnSELECCIONAR.setText("SELECCIONAR");
-        BtnSELECCIONAR.setBorder(javax.swing.BorderFactory.createEtchedBorder(java.awt.Color.black, null));
+        BtnSELECCIONAR.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         BtnSELECCIONAR.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 BtnSELECCIONARActionPerformed(evt);
             }
         });
-        getContentPane().add(BtnSELECCIONAR, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 290, 220, 40));
+        getContentPane().add(BtnSELECCIONAR, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 290, 180, 40));
 
         BtnSalir.setFont(new java.awt.Font("Segoe UI Black", 1, 20)); // NOI18N
         BtnSalir.setText("SALIR");
-        BtnSalir.setBorder(javax.swing.BorderFactory.createEtchedBorder(java.awt.Color.black, null));
+        BtnSalir.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         BtnSalir.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 BtnSalirActionPerformed(evt);
             }
         });
-        getContentPane().add(BtnSalir, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 290, 190, 40));
+        getContentPane().add(BtnSalir, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 290, 180, 40));
 
         jTable2.setForeground(new java.awt.Color(204, 102, 0));
         jTable2.setModel(new javax.swing.table.DefaultTableModel(
@@ -181,23 +181,23 @@ public class FacturaC extends javax.swing.JFrame {
 
         btnBUSCAR.setFont(new java.awt.Font("Segoe UI Black", 1, 20)); // NOI18N
         btnBUSCAR.setText("BUSCAR");
-        btnBUSCAR.setBorder(javax.swing.BorderFactory.createEtchedBorder(java.awt.Color.black, null));
+        btnBUSCAR.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         btnBUSCAR.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnBUSCARActionPerformed(evt);
             }
         });
-        getContentPane().add(btnBUSCAR, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 290, 210, 40));
+        getContentPane().add(btnBUSCAR, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 290, 190, 40));
 
         btnImprimir.setFont(new java.awt.Font("Segoe UI Black", 1, 20)); // NOI18N
         btnImprimir.setText("IMPRIMIR");
-        btnImprimir.setBorder(javax.swing.BorderFactory.createEtchedBorder(java.awt.Color.black, null));
+        btnImprimir.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         btnImprimir.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnImprimirActionPerformed(evt);
             }
         });
-        getContentPane().add(btnImprimir, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 290, 200, 40));
+        getContentPane().add(btnImprimir, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 290, 180, 40));
 
         jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/FACTURA.jpg"))); // NOI18N
         getContentPane().add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 900, 700));

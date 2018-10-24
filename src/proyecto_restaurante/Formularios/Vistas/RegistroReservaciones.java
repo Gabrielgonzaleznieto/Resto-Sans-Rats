@@ -51,6 +51,7 @@ public class RegistroReservaciones extends javax.swing.JFrame {
         btnReservaciones.setBackground(new java.awt.Color(227, 227, 227));
         btnReservaciones.setFont(new java.awt.Font("Segoe UI Black", 1, 20)); // NOI18N
         btnReservaciones.setText("CARGAR NUEVA RESERVA");
+        btnReservaciones.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         btnReservaciones.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnReservacionesActionPerformed(evt);
@@ -61,6 +62,7 @@ public class RegistroReservaciones extends javax.swing.JFrame {
         btnAsignarMesa.setBackground(new java.awt.Color(227, 227, 227));
         btnAsignarMesa.setFont(new java.awt.Font("Segoe UI Black", 1, 20)); // NOI18N
         btnAsignarMesa.setText("MESAS A CARGO");
+        btnAsignarMesa.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         btnAsignarMesa.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnAsignarMesaActionPerformed(evt);
@@ -71,6 +73,7 @@ public class RegistroReservaciones extends javax.swing.JFrame {
         btnMesasDisponibles.setBackground(new java.awt.Color(227, 227, 227));
         btnMesasDisponibles.setFont(new java.awt.Font("Segoe UI Black", 1, 20)); // NOI18N
         btnMesasDisponibles.setText("CONSULTA MESAS DISPONIBLES");
+        btnMesasDisponibles.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         btnMesasDisponibles.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnMesasDisponiblesActionPerformed(evt);
@@ -80,12 +83,13 @@ public class RegistroReservaciones extends javax.swing.JFrame {
 
         btnSalir.setFont(new java.awt.Font("Segoe UI Black", 1, 20)); // NOI18N
         btnSalir.setText("SALIR");
+        btnSalir.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         btnSalir.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnSalirActionPerformed(evt);
             }
         });
-        getContentPane().add(btnSalir, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 500, 150, 50));
+        getContentPane().add(btnSalir, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 460, 300, 70));
 
         jLabel1.setFont(new java.awt.Font("Segoe Script", 1, 35)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(102, 102, 102));
@@ -95,6 +99,7 @@ public class RegistroReservaciones extends javax.swing.JFrame {
         btnCancelacionReservas.setBackground(new java.awt.Color(227, 227, 227));
         btnCancelacionReservas.setFont(new java.awt.Font("Segoe UI Black", 0, 20)); // NOI18N
         btnCancelacionReservas.setText("CANCELACION DE RESERVA");
+        btnCancelacionReservas.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         btnCancelacionReservas.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnCancelacionReservasActionPerformed(evt);
@@ -102,7 +107,7 @@ public class RegistroReservaciones extends javax.swing.JFrame {
         });
         getContentPane().add(btnCancelacionReservas, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 310, 380, 100));
 
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Fondoproye.png"))); // NOI18N
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/FondoM.png"))); // NOI18N
         getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1100, 580));
 
         pack();

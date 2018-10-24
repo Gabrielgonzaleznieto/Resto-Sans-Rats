@@ -79,7 +79,7 @@ public class DerivadorAdmin extends javax.swing.JFrame {
                 BotonReservacionesActionPerformed(evt);
             }
         });
-        getContentPane().add(BotonReservaciones, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 280, 310, 100));
+        getContentPane().add(BotonReservaciones, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 290, 310, 100));
 
         BotonPedidos.setFont(new java.awt.Font("Segoe UI Black", 1, 25)); // NOI18N
         BotonPedidos.setText("PEDIDOS");
@@ -89,7 +89,7 @@ public class DerivadorAdmin extends javax.swing.JFrame {
                 BotonPedidosActionPerformed(evt);
             }
         });
-        getContentPane().add(BotonPedidos, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 280, 310, 100));
+        getContentPane().add(BotonPedidos, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 290, 310, 100));
 
         BotonEmpleados.setFont(new java.awt.Font("Segoe UI Black", 1, 27)); // NOI18N
         BotonEmpleados.setText("EMPLEADOS");
@@ -99,7 +99,7 @@ public class DerivadorAdmin extends javax.swing.JFrame {
                 BotonEmpleadosActionPerformed(evt);
             }
         });
-        getContentPane().add(BotonEmpleados, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 150, 310, 100));
+        getContentPane().add(BotonEmpleados, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 160, 310, 100));
 
         BotonCasillaCorreo.setFont(new java.awt.Font("Segoe UI Black", 1, 25)); // NOI18N
         BotonCasillaCorreo.setText("CASILLA CORREO");
@@ -109,7 +109,7 @@ public class DerivadorAdmin extends javax.swing.JFrame {
                 BotonCasillaCorreoActionPerformed(evt);
             }
         });
-        getContentPane().add(BotonCasillaCorreo, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 150, 310, 100));
+        getContentPane().add(BotonCasillaCorreo, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 160, 310, 100));
 
         btnSALIR.setFont(new java.awt.Font("Segoe UI Black", 1, 25)); // NOI18N
         btnSALIR.setText("SALIR DEL SISTEMA");
@@ -119,15 +119,15 @@ public class DerivadorAdmin extends javax.swing.JFrame {
                 btnSALIRActionPerformed(evt);
             }
         });
-        getContentPane().add(btnSALIR, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 410, 310, 100));
+        getContentPane().add(btnSALIR, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 420, 310, 100));
 
         jLabel2.setFont(new java.awt.Font("Segoe Script", 3, 35)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(102, 102, 102));
         jLabel2.setText("¡¡¡ BIENVENIDO ADMINISTRADOR!!!");
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 30, 700, 70));
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 50, 700, 70));
 
         jLabel1.setFont(new java.awt.Font("Trebuchet MS", 1, 25)); // NOI18N
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Fondoproye.png"))); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/FondoM.png"))); // NOI18N
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1100, 580));
 
         pack();
